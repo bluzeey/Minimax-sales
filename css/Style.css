@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+body {
+  margin: 0;
+  background: #222;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+}
+h1 {
+  text-align: center;
+}
+h1,
+h2,
+h3,
+p {
+  color: #ffffff;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/* Introduction Section */
+.intro {
+  display: block;
+  font-size: 125%;
+}
+.left {
+  padding: 5%;
+}
+.intro img {
+  float: right;
+  width: 30%;
+  padding: 10%;
+  margin-bottom: 25px;
+  display: block;
+}
+/* Middle Section */
+.middle img {
+  float: left;
+  width: 30%;
+  padding: 10%;
+  margin-bottom: 25px;
+  display: block;
+}
+.middle {
+  padding: 5%;
+  display: block;
+  font-size: 125%;
+}
+/* End Section */
+.end {
+  padding: 5%;
+  display: block;
+  font-size: 125%;
+}
+.end img {
+  float: right;
+  width: 30%;
+  padding: 10%;
+  margin-bottom: 25px;
+  display: block;
+}
+/* Products */
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  color: #ffffff;
+}
+
+.figure {
+  padding: 10%;
+  margin: 10%;
+}
+.caption {
+  text-align: center;
+}
+.product img {
+  height :75%;
+  width:75%;
+  margin: 10%;
+  border-radius: 8%;
+}
+/* About */
+
+/* Footer */
+.footer {
+  background: #55d6aa;
+  color: #111;
+  text-align: center;
+  padding: 2.5em 0;
+  clear: both;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.footer__link {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.footer__link:hover,
+.social-list__link:hover {
+  opacity: 0.7;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+  padding: 0;
+}
+
+.social-list__item {
+  margin: 0 0.5em;
+}
+.social-list__link {
+  margin: 0.5em;
+}
